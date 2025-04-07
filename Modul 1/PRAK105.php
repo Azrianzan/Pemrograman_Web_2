@@ -21,7 +21,7 @@
             "model4" => "Samsung Galaxy Xcover 5"
         );
         
-        echo "<tr id='judul-tabel'><th><h2>Daftar Smartphone Samsung<h1></th></tr>";
+        echo "<tr id='judul-tabel'><th><h2>Daftar Smartphone Samsung</h2></th></tr>";
         foreach ($hp_samsung as $key => $model) {
             echo "<tr><td>$model</td></tr>";
         }
