@@ -29,7 +29,7 @@
 
         <form action="" method="post">
             Nilai : 
-            <input type="number" name="nilai" value="<?php echo htmlspecialchars($angka); ?>">
+            <input type="number" name="nilai" value="<?php echo htmlspecialchars($nilai); ?>">
             <br>
             <button type="submit" name="konversi">Konversi</button>
         </form>
