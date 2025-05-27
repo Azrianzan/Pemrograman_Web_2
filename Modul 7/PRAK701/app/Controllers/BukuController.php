@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use CodeIgniter\Exceptions\PageNotFoundException;
 use App\Models\BukuModel;
 
 class BukuController extends BaseController
@@ -77,7 +78,7 @@ class BukuController extends BaseController
         $this->requireLogin();
         $buku = $this->bukuModel->find($id);
         if (!$buku) {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Buku tidak ditemukan");
+            throw PageNotFoundException::forPageNotFound("Buku tidak ditemukan");
         }
 
         return view('buku/edit', [
